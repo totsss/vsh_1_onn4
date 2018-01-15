@@ -1,5 +1,6 @@
 
 from bottle import route, run, static_file
+import os
 @route('/static/<nafn>')
 def static(nafn):
     return static_file(nafn,root='./static')
